@@ -17,7 +17,7 @@ fi
 
 # Se a pasta .script existe
 if [ -d "$HOME/.script" ]; then
-	if [ -n "$(ls -A "$HOME/.script")" ]; then # Add .script ao $PATH, se ainda não estiver
+	if [ -n "$(ls -A "$HOME/.script")" ]; then
 		# Add a pasta .script ao $PATH
 		if [[ ":$PATH:" != *":$HOME/.script:"* ]]; then
 			export PATH="$HOME/.script:$PATH"
